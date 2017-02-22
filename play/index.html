@@ -36,19 +36,11 @@ background-color: #000; color: #fff; }
   position: absolute;
 }
 </style>
-<script language="JavaScript" type="text/javascript">
-<!--
-// -----------------------------------------------------------------------------
-// Globals
-// Major version of Flash required
-var requiredMajorVersion = 11;
-// Minor version of Flash required
-var requiredMinorVersion = 2;
-// Minor version of Flash required
-var requiredRevision = 0;
-// -----------------------------------------------------------------------------
-// -->
-</script>
+		<script type="text/javascript">
+		var flashvars = { pserverHost: window.location.hostname };
+		var params = { wmode: "direct", quality: "low", bgcolor: "#000000" };
+		swfobject.embedSWF("client.swf", "lr", "100%", "100%", "11.2.0", "expressInstall.swf", flashvars, params);
+		</script>
 
 <body>
 <embed quality="low" width="100%" height="100%" scale="exactfit" src="client.swf">
