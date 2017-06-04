@@ -1,3 +1,30 @@
+/* Page background */
 body {
-  background: #f5f5f5;
+  background: #303030 !important;
+}
+
+/* Navigation drawer */
+.mdl-layout__drawer {
+  background: #424242 !important;
+  border-right: 0px !important;
+}
+.mdl-layout-title {
+  color: #FFFFFF !important;
+}
+.mdl-navigation__link {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.mdl-navigation__link:hover {
+  background: #4F4f4f !important;
+}
+
+/* Cards */
+.mdl-card {
+  background: #424242 !important;
+}
+.mdl-card__title {
+  color: #FFFFFF !important;
+}
+.mdl-card__supporting-text {
+  color: rgba(255, 255, 255, 0.7) !important;
 }
