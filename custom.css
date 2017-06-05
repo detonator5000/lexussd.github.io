@@ -49,10 +49,13 @@ body {
 #lexussrealms {
   background-repeat:no-repeat !important;
   background-size:cover !important;
-  background: linear-gradient(rgba(63, 16, 71, 0.7), rgba(63, 16, 71, 0.7)), url('https://github.com/LexussD/lexussd.github.io/blob/rewrite/assets/screenshot.PNG?raw=true');
+  background: linear-gradient(rgba(63, 16, 71, 0.7), rgba(63, 16, 71, 0.7)), url('https://github.com/LexussD/lexussd.github.io/blob/rewrite/assets/screenshot-min.png?raw=true');
 }
 #discord {
   background: rgba(114, 137, 218, 0.7) !important;
+}
+#faq {
+  background: rgba(255, 109, 0, 0.7) !important;
 }
 #discord-widget {
   position: absolute !important;
@@ -62,14 +65,24 @@ body {
 }
 .button {
   border-radius: 4px;
-  background-color: var(--accent-color);
+  background-color: rgba(	255, 109, 0, 0.8);
   border: none;
-  color: var(--primary-text-dark);
+  color: var(--primary-text-light);
   padding: 8px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
+}
+.button:focus {
+    outline: none;
+    animation-name: button-color-change;
+    animation-duration: 250ms;
+    background-color: var(--accent-color)
+}
+@keyframes button-color-change {
+    from {background-color: rgba(	255, 109, 0, 0.8);}
+    to {background-color: var(--accent-color);}
 }
 .ripple{
   overflow:hidden;
