@@ -20,17 +20,27 @@ body {
   font-size: 4em;
 }
 #lexussrealms-text {
-  position: absolute !important;
-  top: 30%;
+  top: 20%;
+}
+#faq-header {
+  top: 215%;
+}
+#faq-questions {
+  top: 250%;
+  padding: 16px;
+}
+#arrow-down {
+  top: 90%;
+  width: 5vw
 }
 #play-button {
-  position: absolute !important;
   top: 70%;
 }
 #play-button:hover {
   cursor:pointer;
 }
 .center-horizontal {
+  position: absolute !important;
   left: 50% !important;
   margin-right: -50% !important;
   transform: translate(-50%, -50%) !important;
@@ -38,6 +48,7 @@ body {
 .secondary-text {
   color: rgba(255, 255, 255, 0.7) !important;
   font-family: 'Noto Sans', sans-serif !important;
+  font-size: 1.5em;
 }
 .hover-effect:hover {
   background: #4F4f4f !important;
@@ -58,7 +69,6 @@ body {
   background: rgba(255, 109, 0, 0.7) !important;
 }
 #discord-widget {
-  position: absolute !important;
   top: 150%;
   width: 50vw;
   height: 70vh
@@ -73,16 +83,26 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
+  animation-name: reverse-button-color-change;
+  animation-duration: 500ms;
+}
+.button:hover {
+    outline: none;
+    animation-name: button-color-change;
+    animation-duration: 500ms;
+    background-color: var(--accent-color)
 }
 .button:focus {
     outline: none;
-    animation-name: button-color-change;
-    animation-duration: 250ms;
     background-color: var(--accent-color)
 }
 @keyframes button-color-change {
     from {background-color: rgba(	255, 109, 0, 0.8);}
     to {background-color: var(--accent-color);}
+}
+@keyframes reverse-button-color-change {
+    from {background-color: var(--accent-color);}
+    to {background-color: rgba(	255, 109, 0, 0.8);}
 }
 .ripple{
   overflow:hidden;
