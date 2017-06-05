@@ -84,12 +84,12 @@ body {
   display: inline-block;
   font-size: 2em;
   animation-name: reverse-button-color-change;
-  animation-duration: 500ms;
+  animation-duration: 200ms;
 }
 .button:hover {
     outline: none;
     animation-name: button-color-change;
-    animation-duration: 500ms;
+    animation-duration: 200ms;
     background-color: var(--accent-color)
 }
 .button:focus {
