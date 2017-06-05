@@ -14,9 +14,11 @@ body {
 .lexussrealms-text {
   position: absolute !important;
   top: 30%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%)
+}
+.center-horizontal {
+  left: 50% !important;
+  margin-right: -50% !important;
+  transform: translate(-50%, -50%) !important;
 }
 .secondary-text {
   color: rgba(255, 255, 255, 0.7) !important;
@@ -33,5 +35,5 @@ body {
 .lexussrealms-logo {
   background-repeat:no-repeat !important;
   background-size:cover !important;
-  background: linear-gradient(rgba(156, 39, 176, 0.7), rgba(156, 39, 176, 0.7)), url('https://github.com/LexussD/lexussd.github.io/blob/master/assets/screenshot.png?raw=true');
+  background: linear-gradient(rgba(63, 16, 71, 0.7), rgba(63, 16, 71, 0.7)), url('https://github.com/LexussD/lexussd.github.io/blob/rewrite/assets/screenshot.PNG?raw=true');
 }
