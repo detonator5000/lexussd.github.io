@@ -89,26 +89,14 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
-  animation-name: reverse-button-color-change;
-  animation-duration: 200ms;
 }
 .button:hover {
     outline: none;
-    animation-name: button-color-change;
-    animation-duration: 200ms;
     background-color: var(--accent-color)
 }
 .button:focus {
     outline: none;
     background-color: var(--accent-color)
-}
-@keyframes button-color-change {
-    from {background-color: rgba(	255, 109, 0, 0.8);}
-    to {background-color: var(--accent-color);}
-}
-@keyframes reverse-button-color-change {
-    from {background-color: var(--accent-color);}
-    to {background-color: rgba(	255, 109, 0, 0.8);}
 }
 .ripple{
   overflow:hidden;
