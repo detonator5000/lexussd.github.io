@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>LexussRealms</title>
@@ -6,98 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-orange.min.css" />
-    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.css"/>
+    <link rel="stylesheet" type="text/css" href="custom.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.4/jquery.fullpage.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/custom.js"></script>
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
-        <div class="mdl-layout__header-row">
-          <div class="mdl-layout-spacer"></div>
-        </div>
-      </header>
-      <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">LexussRealms</span>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" onclick="window.open('assets/sprite-editor/index.html', 'newwindow', 'width=850, height=650'); return false;">Sprite creator</a>
-          <a class="mdl-navigation__link" href="https://discord.gg/592RBUM" target="_blank">Discord Server</a>
-          <a class="mdl-navigation__link" href="https://github.com/OrbitMPGH/lexussrealms" target="_blank">Client SWF</a>
-          <a class="mdl-navigation__link" href="https://github.com/OrbitMPGH/lexussrealms/issues" target="_blank">Report an Issue</a>
-        </nav>
+    <div id="fullpage">
+      <div id="lexussrealms" class="section">
+        <div id="lexussrealms-text" class="primary-text center-horizontal" style="display: inline-block;">LexussRealms</div>
+        <button id="play-button" type="button" onclick="showGame()" class="button center-horizontal ripple">Play</button>
+        <img src="assets/arrow_down.svg" id="arrow-down" class="center-horizontal" href="#discord"/>
       </div>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-          <div class="mdl-grid">
-            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-              <div class="mdl-grid mdl-grid--no-spacing">
-                <div class="mdl-card__media mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
-                  <img src="assets/lexussrealms-min.png" title="LexussRealms" width="100%" height="auto" />
-                </div>
-                <div class="mdl-grid mdl-grid--no-spacing mdl-cell mdl-cell--6-col mdl-cell--6-col-tablet mdl-cell--12-col-phone">
-                  <div class="mdl-card__supporting-text mdl-cell mdl-cell--12-col">
-                    This is the LexussRealms website, where you can find links to our Discord server, and where you can find the play button! <br />What did you expect here?
-                  </div>
-                  <div class="mdl-card__actions mdl-card--border mdl-cell mdl-cell--12-col mdl-cell--bottom">
-                    <button class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" id="playBtn" type="button">
-                      Play
-                    </Button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__title">
-                F.A.Q
-              </div>
-              <div class="mdl-card__supporting-text">
-                <b>Q:</b> Is the server up?<br />
-                <b>A:</b> The server will be started for closed testing on <b>June 11th, 2017</b>, according to the <a href="#contact_staff">lead developer</a>.
-                <br/><br/>
-                <b>Q:</b> How do I play?<br/>
-                <b>A:</b> Refer to the first answer
-                <br><br>
-                <b>Q:</b> Can I make my own sprites?<br/>
-                <b>A:</b> Of course! In the navigation drawer to your left (you may need to click the hamburger icon), there is a 'Sprite creator' button. Make your sprites there and submit them to one of the staff on Discord :)
-                <br/><br/>
-              </div>
-            </div>
-            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col" id="contact_staff">
-              <div class="mdl-card__title">
-                Contact staff
-              </div>
-              <div class="mdl-card__supporting-text">
-                Join our <a target="_blank" href="https://discord.gg/592RBUM">Discord server</a> and mention one of the following people in the appropriate channel<br><br>
-                Founder: "lexuss"#5630<br>
-                Owner: Mumlaren#1314<br>
-                Lead developer: MrSlick#8691<br>
-                Lead spriter: AntiCunt#3012<br>
-                Artist: Maven#7216
-              </div>
-            </div>
-          </div>
+      <div id="discord" class="section">
+        <iframe src="https://discordapp.com/widget?id=231975884649660416&theme=dark" id="discord-widget" class="center-horizontal" allowtransparency="true" frameborder="0"></iframe>
+      </div>
+      <div id="faq" class="section">
+        <div id="faq-header" class="center-horizontal primary-text">
+          F.A.Q
         </div>
-      </main>
+        <div id="faq-questions" class="center-horizontal secondary-text">
+          <b>Q:</b> Is the server up?<br />
+          <b>A:</b> The server will be started for closed testing on <b>June 11th, 2017</b>, according to the <a href="#contact-staff">lead developer</a>.
+          <br/><br/>
+          <b>Q:</b> How do I play?<br/>
+          <b>A:</b> Refer to the first answer
+          <br><br>
+          <b>Q:</b> Can I make my own sprites?<br/>
+          <b>A:</b> Of course! This feature is coming soon
+          <br/><br/>
+        </div>
+      </div>
+      <div id="contact-staff" class="section">
+        <div id="contact-staff-header" class="center-horizontal primary-text">
+          Contact Staff
+        </div>
+        <div id="staff-names" class="center-horizontal secondary-text">
+          Join our <a target="_blank" href="https://discord.gg/592RBUM">Discord server</a> and mention one of the following people in the appropriate channel<br><br>
+          Founder: "lexuss"#5630<br>
+          Owner: Mumlaren#1314<br>
+          Lead developer: MrSlick#8691<br>
+          Lead spriter: AntiCunt#3012<br>
+          Artist: Maven#7216
+        </div>
+      </div>
+      <div id="client" class="section">
+        <embed width="95%" height="100%" src="assets/client/client.swf" pluginspage="https://get.adobe.com/flashplayer/" play="true" loop="true" quality="autohigh" bgcolor="#303030" allowFullScreen="true" wmode="direct" />
+      </div>
     </div>
-    <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
-      <div class="mdl-snackbar__text"></div>
-      <button class="mdl-snackbar__action" type="button"></button>
-    </div>
-    <script>
-      (function() {
-        'use strict';
-        var snackbarContainer = document.querySelector('#snackbar');
-        var showSnackbarButton = document.querySelector('#playBtn');
-        showSnackbarButton.addEventListener('click', function() {
-          'use strict';
-          var data = {
-            message: "The server will be started for closed beta testing on June 11th 2017.",
-            timeout: 5000
-          };
-          snackbarContainer.MaterialSnackbar.showSnackbar(data);
-        });
-      }());
-    </script>
   </body>
 </html>
