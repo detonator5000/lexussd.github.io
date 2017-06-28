@@ -3,7 +3,9 @@
     --primary-text-light: #FFFFFF;
     --primary-text-dark: rgba(0, 0, 0, 0.87);
 }
-
+* {
+  font-family: 'Noto Sans', sans-serif !important;
+}
 body {
   margin: 0px;
   width: 100vw;
@@ -21,7 +23,6 @@ body {
 }
 .primary-text {
   color: #FFFFFF !important;
-  font-family: 'Noto Sans', sans-serif !important;
   font-size: 4em;
   padding: 16px;
 }
