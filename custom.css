@@ -23,6 +23,7 @@ body {
   color: #FFFFFF !important;
   font-family: 'Noto Sans', sans-serif !important;
   font-size: 4em;
+  padding: 16px;
 }
 .viewport-size {
   width:  100vw;
@@ -38,9 +39,11 @@ body {
   top: 250%;
   padding: 16px;
 }
-#arrow-down {
+#arrow-down-container {
   top: 90%;
-  width: 5vw
+}
+#arrow-down {
+  width: 5vw;
 }
 #play-button {
   top: 70%;
@@ -58,6 +61,7 @@ body {
   color: rgba(255, 255, 255, 0.7) !important;
   font-family: 'Noto Sans', sans-serif !important;
   font-size: 1.5em;
+  padding: 16px;
 }
 .hover-effect:hover {
   background: #4F4f4f !important;

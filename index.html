@@ -12,13 +12,17 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="custom.css" />
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/custom.js"></script>
   </head>
   <body>
     <div id="page-content">
       <div id="lexussrealms" class="viewport-size">
         <img src="assets/lexussrealms-logo-min.png" id="lexussrealms-text" class="center-horizontal"/>
         <a id="play-button" type="button" href="#client" class="button center-horizontal">Play</a>
-        <img src="assets/arrow_down.svg" id="arrow-down" class="center-horizontal" href="#discord"/>
+        <a href="#discord" id="arrow-down-container" class="center-horizontal">
+          <img src="assets/arrow_down.svg" id="arrow-down"/>
+        </a>
       </div>
       <div id="discord" class="viewport-size">
         <iframe src="https://discordapp.com/widget?id=231975884649660416&theme=dark" id="discord-widget" class="center-horizontal" allowtransparency="true" frameborder="0"></iframe>
