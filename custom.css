@@ -7,6 +7,9 @@
 * {
   font-family: 'Roboto', sans-serif;
 }
+a {
+  color: var(--accent-color);
+}
 body {
   margin: 0px;
   width: 100vw;
@@ -36,8 +39,13 @@ body {
   -webkit-line-clamp: 1;
   overflow: hidden;
   text-overflow: clip;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
 }
 .side-nav a:hover {
+  width: 100%;
+}
+.side-nav a:focus {
   width: 100%;
 }
 .active-list-item {
