@@ -1,6 +1,7 @@
 :root{
     --accent-color:#FF6D00;
     --primary-text-light: #FFFFFF;
+    --secondary-text-light: rgba(255, 255, 255, 0.7);
     --primary-text-dark: rgba(0, 0, 0, 0.87);
 }
 * {
@@ -16,6 +17,34 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+.side-nav {
+  position: fixed !important;
+  margin: 16px;
+  bottom: 50vh
+}
+.side-nav a {
+  font-size: 1.5em !important;
+  margin: 8px;
+  width: 1.5em;
+  height: 1em;
+  display:block;
+  text-align:left;
+  white-space:normal;
+  float:none;
+  text-decoration: none;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: clip;
+}
+.side-nav a:hover {
+  width: 100%;
+}
+.active-list-item {
+  color: var(--primary-text-light) !important;
+}
+.inactive-list-item {
+  color: var(--secondary-text-light) !important;
 }
 .foreground-item {
   background: #424242 !important;
@@ -38,7 +67,8 @@ body {
 }
 #faq-questions {
   top: 250%;
-  padding: 16px;
+  margin-right: 16px;
+  margin-left: 32px;
 }
 #arrow-down-container {
   top: 90%;
@@ -92,7 +122,9 @@ body {
   top: 315%
 }
 #staff-names {
-  top: 350%
+  top: 350%;
+  margin-right: 16px;
+  margin-left: 32px;
 }
 .button {
   border-radius: 4px;
@@ -104,8 +136,8 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
-  -webkit-transition: background-color 0.5s;
-  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 .button:hover {
     outline: none;
