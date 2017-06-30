@@ -15,7 +15,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
-  background-image: url('https://github.com/LexussD/lexussd.github.io/blob/rewrite/assets/screenshot-min.png?raw=true');
+  background-image: url('assets/screenshot-min.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,7 +24,8 @@ body {
 .side-nav {
   position: fixed !important;
   margin: 16px;
-  bottom: 50vh
+  top: 50vh;
+  transform: translateX(0%) translateY(-50%);
 }
 .side-nav a {
   font-size: 1.5em !important;
@@ -39,8 +40,6 @@ body {
   -webkit-line-clamp: 1;
   overflow: hidden;
   text-overflow: clip;
-  -webkit-transition: width 0.2s;
-  transition: width 0.2s;
 }
 .side-nav a:hover {
   width: 100%;
