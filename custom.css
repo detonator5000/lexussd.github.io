@@ -1,5 +1,6 @@
 :root{
     --accent-color:#FF6D00;
+    --transparent-purple: rgba(63, 16, 71, 0.8);
     --primary-text-light: #FFFFFF;
     --secondary-text-light: rgba(255, 255, 255, 0.7);
     --primary-text-dark: rgba(0, 0, 0, 0.87);
@@ -65,6 +66,7 @@ body {
 .viewport-size {
   width:  100vw;
   height: 100vh;
+  outline: var(--secondary-text-light) solid thin;
 }
 #lexussrealms-text {
   top: 20%;
@@ -109,13 +111,13 @@ body {
   width: 100vw;
 }
 #lexussrealms {
-  background: rgba(63, 16, 71, 0.7);
+  background-color: var(--transparent-purple);
 }
 #discord {
-  background: rgba(114, 137, 218, 0.7);
+  background-color: var(--transparent-purple);
 }
 #faq {
-  background: rgba(255, 109, 0, 0.7);
+  background-color: var(--transparent-purple);
 }
 #discord-widget {
   top: 150%;
@@ -123,7 +125,7 @@ body {
   height: 70vh
 }
 #contact-staff {
-  background: rgba(213, 0, 0, 0.7);
+  background-color: var(--transparent-purple);
 }
 #contact-staff-header {
   top: 315%
