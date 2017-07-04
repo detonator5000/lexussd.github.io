@@ -26,12 +26,15 @@ body {
   position: fixed !important;
   margin: 16px;
   top: 50vh;
+  width: 1.5em;
+  border-radius: 2px;
   transform: translateX(0%) translateY(-50%);
+  transition: width 1s, background-color 0.5s;
+  transition-timing-function: ease;
 }
 .side-nav a {
   font-size: 1.5em !important;
   margin: 8px;
-  width: 1.5em;
   height: 1em;
   display:block;
   text-align:left;
@@ -42,11 +45,13 @@ body {
   overflow: hidden;
   text-overflow: clip;
 }
-.side-nav a:hover {
-  width: 100%;
+.side-nav:hover {
+  width: 12em;
+  background-color: rgba(	255, 109, 0, 0.5);
 }
-.side-nav a:focus {
-  width: 100%;
+.side-nav:focus {
+  width: 12em;
+  background-color: rgba(	255, 109, 0, 0.5);
 }
 .active-list-item {
   color: var(--primary-text-light) !important;
@@ -145,7 +150,6 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 2em;
-  -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 .button:hover {

@@ -16,8 +16,8 @@ $(window).scroll(function(){
     {
         var docViewTop = $(window).scrollTop();
         var docViewBottom = docViewTop + $(window).height();
-        var elemTop = $(elem).offset().top;
-        return ((elemTop <= docViewBottom) && (elemTop >= docViewTop));
+        var elemCenter = $(elem).offset().top + ($(elem).height() / 2);
+        return ((elemCenter <= docViewBottom) && (elemCenter >= docViewTop));
     }
 
     if(elementScrolled('#lexussrealms')) {
